@@ -18,24 +18,33 @@
     <div id="grid-container">
         <header>
             <nav>
-                <a href="index.html"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden"></a>
+                <a href="index.html" id="logo"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden"></a>
                 <li>
-                    <a href="index.html">Home</a>
-                    <a href="products.html">Portfolio</a>
-                    <a href="about.html">About</a>
-                    <a href="about.html#contact_us">Contact</a>
+                    <a href="index.html" id="home"><h3>Home</h3></a>
+                    <a href="products.html" id="portfolio"><h3>Portfolio</h3></a>
+                    <a href="about.html" id="about"><h3>About</h3></a>
+                    <a href="about.html#contact_us" id="contact"><h3>Contact</h3></a>
                 </li>
             </nav>
         </header>
 
         <main>
             <section>
-                <h1>Compeling Headline</h1>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                </p>
-                <a href="#our_services"><button>Read more about our services</button></a>
+                <div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="img/mountains.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <span class="overlay">
+                    <span class="inner">
+                        <h1>Compeling Headline</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        </p>
+                        <a href="#our_services"><button>Read more about our services</button></a>
+                    </span>
+                </span>
             </section>
 
             <section>
