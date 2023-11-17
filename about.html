@@ -18,13 +18,13 @@
     <div id="grid-container">
         <header>
             <nav>
-                <a href="index.html"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden"></a>
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="products.html">Portfolio</a>
-                    <a href="about.html">About</a>
-                    <a href="about.html#contact_us">Contact</a>
-                </li>
+                <a href="index.html" id="logo"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden"></a>
+                <ul class="nav">
+                    <li><a href="index.html" id="home"><p>Home</p></a></li>
+                    <li><a href="products.html" id="portfolio"><p>Portfolio</p></a></li>
+                    <li><a href="about.html" id="about"><p>About</p></a></li>
+                    <li><a href="about.html#contact_us" id="contact"><h3>Contact</h3></a></li>
+                </ul>
             </nav>
         </header>
 
@@ -39,7 +39,7 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                     cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
                 </p>
-                <a href="#contact_info"><button>Get in touch with us</button></a>
+                <a href="#contact_info">Get in touch with us</a>
             </section>
             <section>
                 <h2>Our services</h2>
@@ -62,9 +62,9 @@
                 <h2>Contact us</h2>
                 <h3>Send us a message</h3>
                 <p>Name</p>
-                <input type="name" value="Ola Nordmann...">
+                <input type="name" value="name" placeholder="Ola Nordmann...">
                 <p>Subject</p>
-                <input type="subject" value="Branding...">
+                <input type="subject" value="subject" placeholder="Subject..">
                 <p>Message</p>
                 <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 <input type="submit" value="Send message">
