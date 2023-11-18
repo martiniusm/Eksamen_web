@@ -35,9 +35,9 @@ header {
     width: 100%;
 }
 
-#logo {
-    width: 130px;
-    height: 130px;
+.logo {
+    width: 110px;
+    height: 110px;
 }
 
 header nav ul {
@@ -75,7 +75,7 @@ a {
     color: black;
 } 
 
-#bilde_section {
+.bilde_section {
     position: relative;
     width: 100%;
     height: 400px;
@@ -130,32 +130,178 @@ a {
 }
 
 #about_our_company {
-    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
+    padding: 1rem;
+    height: auto;
     background-color: #e6bd43;
+    margin: auto;
+}
+
+#placeholder_index {
+    width: 90%;
+    height: 20%;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 1.5rem;
+}
+
+#about_our_company p {
+    padding: 1rem;
+    margin: 0.5rem;
+    max-width: 250px;
+}
+
+#about_our_company a {
+    outline-style: solid;
+    outline-color: black;
+    font-weight: 700;
+    padding: 1rem;
+    max-height: 25px;
+}
+
+#our_services {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#our_services {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
     margin: auto;
     padding: auto;
 }
 
-#about_our_company span {
+#our_services article h4 {
+    padding: 0;
+    margin: 0;
+}
+
+#our_services i {
+    padding: 1rem;
+    font-size: xx-large;
+}
+
+#newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    margin: auto;
+    background-color: #cccccc;
+}
+
+#email {
+    height: 40px;
+    width: 150px;
+}
+
+#sumbit {
+    background-color: #e6bd43;
+    height: 46px;
+    width: 150px;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem;
+    background-color: #252525;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
     display: inline-block;
-    max-width: 250px;
-    text-align: left;
+    justify-content: center;
+    list-style: none;
+    margin: 1.5rem;
+    padding: 0;
 }
 
-#placeholder_index {
-    width: 70%;
-    height: 30%;
-    padding: 1.5rem;
+footer h3 {
+    color: white;
+    font-weight: 300;
 }
 
-#about_our_company a {
-    outline: ;
+footer i {
+    color: white;
 }
 
-@media only screen and (min-width:700px) {
+/*CSS products*/
+.bilde_section_products {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.bilde_section_products h1 {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: 180px;
+    bottom: 180px;
+}
+
+#explore {
+    padding: 1rem;
+    margin: 1rem;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 3px;
+}
+
+.btn_product a {
+    display: inline-block;
+    margin: 2rem;
+    outline-style: solid;
+    outline-color: black;
+    font-weight: 700;
+    padding: 1rem;
+    max-height: 25px;
+    width: fit-content;
+}
+
+#section_branding {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}
+
+#branding {
+    padding: 1rem;
+    margin: 1rem;
+    padding-bottom: 5px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 3px;
+}
+
+#section_branding img {
+    
+}
+
+@media only screen and (min-width:515px) {
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
         grid-template-columns: 1fr 1fr 1fr;
