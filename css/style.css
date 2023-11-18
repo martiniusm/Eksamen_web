@@ -123,6 +123,37 @@ a {
     display: none;
 }
 
+#subheading {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#about_our_company {
+    height: 40%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #e6bd43;
+    margin: auto;
+    padding: auto;
+}
+
+#about_our_company span {
+    display: inline-block;
+    max-width: 250px;
+    text-align: left;
+}
+
+#placeholder_index {
+    width: 70%;
+    height: 30%;
+    padding: 1.5rem;
+}
+
+#about_our_company a {
+    outline: ;
+}
 
 @media only screen and (min-width:700px) {
     #grid-container {
