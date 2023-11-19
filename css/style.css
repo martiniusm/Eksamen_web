@@ -88,26 +88,29 @@ a {
 }
 
 .inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
     text-align: center;
-    justify-content: center;
 }
 
 .inner h1 {
-    padding: 1rem;
+    padding-top: 1rem;
 }
 
 .inner p {
-    padding: 1rem;
+    padding-bottom: 1rem;
     margin: 1rem;
 }
 
 #a_our_services{
-    position: relative;
-    display: inline-block;
-    text-align: left;
+    display: flex;
+    text-align: center;
     background-color: #e6bd43;
-    height: auto;
+    font-weight: 700;
+    padding: 0.8rem;
+    width: fit-content;
 }
 
 #bilde_header {
