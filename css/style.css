@@ -143,12 +143,17 @@ a {
     margin: auto;
 }
 
-#placeholder_index {
+#img_placeholder_index {
     width: 90%;
     height: 20%;
     max-width: 400px;
     max-height: 400px;
     padding: 1.5rem;
+}
+
+#about_our_company h2 {
+    width: fit-content;
+    height: fit-content;
 }
 
 #about_our_company p {
@@ -157,7 +162,7 @@ a {
     max-width: 250px;
 }
 
-#about_our_company a {
+#about_our_company_a {
     outline-style: solid;
     outline-color: black;
     font-weight: 700;
@@ -393,28 +398,13 @@ footer i {
     background: rgba(212, 212, 212, 0.8);
 }
 
-#about_section1 a{
+#about_section1 a {
     display: flex;
     text-align: center;
     background-color: #e6bd43;
     font-weight: 700;
     padding: 0.8rem;
     width: fit-content;
-}
-
-#about_our_services {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-    margin: auto;
-}
-
-#about_our_services i {
-    padding: 1rem;
-    font-size: xx-large;
 }
 
 #clients {
@@ -448,8 +438,6 @@ footer i {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    box-sizing: border-box;
-    align-items: left;
     padding: 1rem;
     margin: auto;
 }
@@ -478,10 +466,6 @@ footer i {
 }
 
 
-
-
-
-
 @media only screen and (min-width:515px) {
     #grid-container {
         grid-template-areas: "header header header" "main main main" "footer footer footer";
@@ -503,6 +487,8 @@ footer i {
         grid-column-end: 4;
     }
 
+    /*CSS index*/
+
     #video {
         position: absolute;
         width: 100%;
@@ -510,4 +496,55 @@ footer i {
         height: 250px;
         object-fit: cover;
     }
+
+    #about_our_company {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        text-align: left;
+        padding: 1rem;
+        height: auto;
+        background-color: #e6bd43;
+        margin: auto;
+    }
+
+    #img_placeholder_index {
+        display: flex;
+        width: 100%;
+        height: auto;
+    }
+
+    #about_our_company p {
+        padding: 1rem;
+        margin: 0.5rem;
+        max-width: 50%;
+        min-height: fit-content;
+    }
+
+    #about_our_company_a {
+        padding: 1rem;
+        max-height: 25px;
+        width: max-content;
+    }
+
+    /*CSS portfolio*/
+
+    /*CSS about*/
+
+    #our_services h2 {
+        width: 100%;
+    }
+
+    
+
+    #our_services {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        height: auto;
+        margin: auto;
+    }
+
 }
