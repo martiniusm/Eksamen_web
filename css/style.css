@@ -457,18 +457,21 @@ footer i {
     padding: 1rem;
 }
 
-#contact_us article {
+#contact_us {
     background-color: #efefef;
+    padding-top: 1rem;
+}
+
+#contact_us h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#contact_us article {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 1rem;
     margin: auto;
-}
-
-#contact_us article h2 {
-    display: flex;
-    justify-content: center;
 }
 
 #contact_us_name {
@@ -617,8 +620,6 @@ footer i {
         min-width: 200px;
     }
 
-    
-
     #section_branding h5 {
         width: 100%;
     }
@@ -687,4 +688,42 @@ footer i {
     #about_header article {
         width: 40%;
     }
+
+    #contact_us {
+        width: 100%;
+        display: flex;
+    }
+
+    #contact_us h2 {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+    }
+
+    #contact_us article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        margin: 0;
+    }
+
+    #contact_us_article1 {
+        display: flex;
+        gap: 1rem;
+        padding: 1;
+        padding-top: 5rem;
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    #contact_us_article2 {
+        display: flex;
+        padding: 1;
+        padding-top: 5rem;
+        gap: 1rem;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
 }
