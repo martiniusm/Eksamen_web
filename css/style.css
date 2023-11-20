@@ -33,6 +33,7 @@ footer {
 header {
     text-align: center;
     width: 100%;
+    padding: 0.5rem;
 }
 
 .logo {
@@ -170,13 +171,13 @@ a {
     max-height: 25px;
 }
 
-#our_services {
+.our_services {
     text-align: center;
     padding: 1rem;
     margin: 1rem;
 }
 
-#our_services {
+.our_services {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -186,12 +187,12 @@ a {
     margin: auto;
 }
 
-#our_services article h4 {
+.our_services article h4 {
     padding: 0;
     margin: 0;
 }
 
-#our_services i {
+.our_services i {
     padding: 1rem;
     font-size: xx-large;
 }
@@ -203,6 +204,11 @@ a {
     padding: 1rem;
     margin: auto;
     background-color: #efefef;
+}
+
+#newsletter h2 {
+    text-align: center;
+    width: 100%;
 }
 
 #email {
@@ -291,13 +297,14 @@ footer i {
 #section_branding {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     text-align: left;
     padding: 1rem;
     margin: auto;
 }
 
-#branding {
+#branding_h2 {
     display: flex;
     padding: 1rem;
     margin: 1rem;
@@ -329,7 +336,7 @@ footer i {
     margin: auto;
 }
 
-#design {
+#design_h2 {
     display: flex;
     padding: 1rem;
     margin: 1rem;
@@ -354,7 +361,7 @@ footer i {
     margin: auto;
 }
 
-#development {
+#development_h2 {
     display: flex;
     padding: 1rem;
     margin: 1rem;
@@ -373,37 +380,54 @@ footer i {
 
 /*CSS about*/
 
-#about_section1 {
+#about_header {
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/12/22/17/business-2846221_1280.jpg");
+    /*Se kilde nummer 2 på dokument for bilde*/
+}
+
+#about_header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem, 1rem;
-    margin: 1rem, 1rem;
-}
-
-#bilde_header_about {
+    background-size: cover;
     width: 100%;
     height: auto;
-    object-fit: contain;
+    padding: 0.5rem;
+    margin: 0;
 }
 
-#about_section1 div {
+#about_header article {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    position: relative;
+    justify-content: center;
+    text-align: left;
     padding: 1rem;
-    margin: 2rem;
-    max-height: 60%;
+    margin: 3rem;
     background: rgba(212, 212, 212, 0.8);
 }
 
-#about_section1 a {
+#about_header h6 {
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+#about_header h4 {
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+#about_header p {
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+#about_header a {
     display: flex;
-    text-align: center;
     background-color: #e6bd43;
+    margin: 2rem;
+    padding: 1.5rem;
     font-weight: 700;
-    padding: 0.8rem;
+    max-height: 25px;
     width: fit-content;
 }
 
@@ -487,6 +511,41 @@ footer i {
         grid-column-end: 4;
     }
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 1rem;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        gap: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    #contact {
+        background-color: #e6bd43;
+        width: 90px;
+        height: 35px;
+        padding: 0.5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+    }
+
     /*CSS index*/
 
     #video {
@@ -527,24 +586,112 @@ footer i {
         width: max-content;
     }
 
-    /*CSS portfolio*/
-
-    /*CSS about*/
-
-    #our_services h2 {
+    .our_services h2 {
         width: 100%;
     }
 
-    
+    .our_services {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        margin: 1rem;
+    }
 
-    #our_services {
+    .our_services article {
+        width: 25%;
+        gap: 1rem;
+    }
+
+    #newsletter{
+        align-items: center;
+    }
+
+    /*CSS portfolio*/
+
+    .products_img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        max-width: 692px;
+        min-width: 200px;
+    }
+
+    #section_branding {
+        width: 100%;
+    }
+
+    #section_branding article {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-        text-align: center;
-        height: auto;
-        margin: auto;
+        max-width: 692px;
     }
 
+    #section_branding h5 {
+        width: 100%;
+    }
+
+    #branding_1 {
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+    #branding_2 {
+        flex-grow: 1;
+    }
+    #branding_3 {
+        flex-grow: 1;
+    }
+    #branding_4 {
+        flex-grow: 2;
+    }
+
+    #section_design h5 {
+        width: 100%;
+    }
+
+    #design_1 {
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+    #design_2 {
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+    #design_3 {
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+
+    #section_branding h5 {
+        width: 100%;
+    }
+
+    #dev_1 {
+        flex-basis: auto;
+        flex-grow: 2;
+    }
+
+    #dev_2 {
+        flex-basis: auto;
+        flex-grow: 2;
+    }
+
+    /*CSS about*/
+
+    #about_header {
+        display: flex;
+        flex-wrap: wrap;
+        background-size: cover;
+        justify-content: flex-end;
+        width: 100%;
+        height: auto;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    #about_header article {
+        width: 40%;
+    }
 }
