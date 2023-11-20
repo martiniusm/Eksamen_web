@@ -224,6 +224,7 @@ a {
     border: none;
     font-size: 16px;
     font-weight: 700;
+    margin-top: 0.5rem;
 }
 
 footer {
@@ -459,7 +460,7 @@ footer i {
 
 #contact_us {
     background-color: #efefef;
-    padding-top: 1rem;
+    padding: 1rem 1rem;
 }
 
 #contact_us h2 {
@@ -472,6 +473,11 @@ footer i {
     flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
+}
+
+
+#contact_us_article2 p {
+    max-width: 70%;
 }
 
 #contact_us_name {
@@ -711,7 +717,6 @@ footer i {
     #contact_us_article1 {
         display: flex;
         gap: 1rem;
-        padding: 1;
         padding-top: 5rem;
         width: 50%;
         justify-content: flex-start;
@@ -724,6 +729,10 @@ footer i {
         gap: 1rem;
         width: 50%;
         justify-content: flex-end;
+    }
+
+    #contact_us_article2 p {
+        max-width: 60%;
     }
 
 }
