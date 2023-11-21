@@ -498,6 +498,10 @@ footer i {
     min-width: 200px;
 }
 
+.googlemap {
+    width: 100%;
+}
+
 
 @media only screen and (min-width:515px) {
     #grid-container {
@@ -733,6 +737,10 @@ footer i {
 
     #contact_us_article2 p {
         max-width: 60%;
+    }
+
+    .googlemap {
+        width: 100%;
     }
 
 }
