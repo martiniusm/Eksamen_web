@@ -475,9 +475,17 @@ footer i {
     margin: auto;
 }
 
-
 #contact_us_article2 p {
     max-width: 70%;
+}
+
+#contact_us_article2 div{
+    display: flex;
+    align-items: center;
+}
+
+#contact_us_article2 div i{
+    padding: 1rem;
 }
 
 #contact_us_name {
@@ -623,7 +631,6 @@ footer i {
     /*CSS portfolio*/
 
     .products_img {
-        object-fit: cover;
         width: 100%;
         height: auto;
         max-width: 692px;
