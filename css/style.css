@@ -59,7 +59,7 @@ header nav ul li {
     list-style: none;
 }
 
-#contact {
+#contact_btn {
     position: relative;
     display: flex;
     justify-content: center;
@@ -71,7 +71,7 @@ header nav ul li {
     padding: 0.5rem;
 }
 
-#contact h3 {
+#contact_btn h3 {
     margin: 0;
     padding: 0;
 }
@@ -587,7 +587,7 @@ footer i {
         margin: 1rem;
     }
     
-    #contact {
+    #contact_btn {
         background-color: #e6bd43;
         width: 90px;
         height: 35px;
@@ -637,7 +637,7 @@ footer i {
     }
     /*Se kilde 6 i dokument*/
 
-    #contact:hover {
+    #contact_btn:hover {
         background-color: #252525;
         color: #e6bd43;
     }
