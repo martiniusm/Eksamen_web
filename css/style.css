@@ -59,6 +59,10 @@ header nav ul li {
 }
 
 #contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
     align-items: center;
     background-color: #e6bd43;
     width: 90px;
@@ -80,6 +84,14 @@ a {
     position: relative;
     width: 100%;
     height: 400px;
+}
+
+#bilde_header {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.4;
 }
 
 .overlay {
@@ -114,14 +126,6 @@ a {
     width: fit-content;
 }
 
-#bilde_header {
-    position: absolute;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    opacity: 0.4;
-}
-
 #video {
     display: none;
 }
@@ -136,12 +140,21 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
     text-align: left;
     padding: 1rem;
     height: auto;
     background-color: #e6bd43;
     margin: auto;
+}
+
+#about_our_company_article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 #img_placeholder_index {
@@ -158,9 +171,9 @@ a {
 }
 
 #about_our_company p {
-    padding: 1rem;
+    padding-bottom: 1rem;
     margin: 0.5rem;
-    max-width: 250px;
+    max-width: 350px;
 }
 
 #about_our_company_a {
@@ -169,6 +182,7 @@ a {
     font-weight: 700;
     padding: 1rem;
     max-height: 25px;
+    width: fit-content;
 }
 
 .our_services {
@@ -383,7 +397,7 @@ footer i {
 
 #about_header {
     background-image: url("https://cdn.pixabay.com/photo/2017/10/12/22/17/business-2846221_1280.jpg");
-    /*Se kilde nummer 2 på dokument for bilde*/
+    /*Se kilde 1 i dokument*/
 }
 
 #about_header {
@@ -569,17 +583,38 @@ footer i {
 
     /*CSS index*/
 
+    #bilde_header {
+        display: none;
+    }
+
     #video {
+        display: flex;
         position: absolute;
         width: 100%;
-        max-width: 1600px;
-        height: 250px;
+        height: 400px;
         object-fit: cover;
+        opacity: 0.4;
+    }
+
+    #contact:hover {
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    #a_our_services:hover {
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
+    #about_our_company_a:hover {
+        background-color: #252525;
+        color: #e6bd43;
     }
 
     #about_our_company {
         display: flex;
         justify-content: flex-start;
+        align-items: center;
         flex-direction: row;
         text-align: left;
         padding: 1rem;
@@ -588,23 +623,33 @@ footer i {
         margin: auto;
     }
 
+    #about_our_company_article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: left;
+        max-width: 75%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    #about_our_company_article p {
+        margin: 0;
+        max-width: 500px;
+    }
+
+
     #img_placeholder_index {
         display: flex;
         width: 100%;
         height: auto;
     }
 
-    #about_our_company p {
-        padding: 1rem;
-        margin: 0.5rem;
-        max-width: 50%;
-        min-height: fit-content;
-    }
-
     #about_our_company_a {
         padding: 1rem;
         max-height: 25px;
-        width: max-content;
+        width: fit-content;
     }
 
     .our_services h2 {
@@ -628,6 +673,11 @@ footer i {
         align-items: center;
     }
 
+    #sumbit:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+
     /*CSS portfolio*/
 
     .products_img {
@@ -637,6 +687,12 @@ footer i {
         min-width: 200px;
     }
 
+    .products_img:hover {
+        transform: scale(1.08);
+        transition: 400ms;
+        /*Se kilde 3 i dokument*/
+    }
+
     #section_branding h5 {
         width: 100%;
     }
@@ -644,6 +700,11 @@ footer i {
     #branding_1 {
         flex-basis: auto;
         flex-grow: 1;
+    }
+
+    .btn_product a:hover{
+        background-color: #252525;
+        color: #e6bd43;
     }
     /*Se kilde 3 i dokument*/
     #branding_2 {
@@ -701,6 +762,11 @@ footer i {
         height: auto;
         padding: 0.5rem;
         margin: 0;
+    }
+
+    #about_header a:hover {
+        background-color: #252525;
+        color: #e6bd43;
     }
 
     #about_header article {
