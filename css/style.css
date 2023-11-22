@@ -53,6 +53,7 @@ header nav ul li {
 }
 
 .nav a{
+    position: relative;
     display: block;
     margin: auto;
     list-style: none;
@@ -616,6 +617,25 @@ footer i {
         object-fit: cover;
         opacity: 0.4;
     }
+
+    .nav a::before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #e6bd43;
+        transform: scaleX(0);
+        transition: transform 500ms ease-in-out;
+    }   
+    /*Se kilde 6 i dokument*/
+    
+    .nav a:hover::before {
+        transform: scaleX(1);
+    }
+    /*Se kilde 6 i dokument*/
 
     #contact:hover {
         background-color: #252525;
