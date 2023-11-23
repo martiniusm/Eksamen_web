@@ -335,7 +335,6 @@ footer i {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
     text-align: left;
     padding: 1rem;
     margin: auto;
@@ -367,7 +366,6 @@ footer i {
 #section_design {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     text-align: left;
     padding: 1rem;
     margin: auto;
@@ -392,7 +390,6 @@ footer i {
 #section_development {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     text-align: left;
     padding: 1rem;
     margin: auto;
@@ -721,6 +718,12 @@ footer i {
 
     /*CSS portfolio*/
 
+    .btn_product a:hover{
+        background-color: #252525;
+        color: #e6bd43;
+    }
+    /*Se kilde 3 i dokument*/
+
     .products_img {
         width: 100%;
         height: auto;
@@ -734,20 +737,20 @@ footer i {
         /*Se kilde 3 i dokument*/
     }
 
+    #section_branding article {
+        max-width: 692px;
+    }
+
     #section_branding h5 {
         width: 100%;
     }
 
     #branding_1 {
+        max-width: 692px;
         flex-basis: auto;
         flex-grow: 1;
     }
 
-    .btn_product a:hover{
-        background-color: #252525;
-        color: #e6bd43;
-    }
-    /*Se kilde 3 i dokument*/
     #branding_2 {
         flex-basis: auto;
         flex-grow: 1;
@@ -759,6 +762,10 @@ footer i {
     #branding_4 {
         flex-basis: auto;
         flex-grow: 1;
+    }
+
+    #section_design article {
+        max-width: 692px;
     }
 
     #section_design h5 {
@@ -778,8 +785,8 @@ footer i {
         flex-grow: 1;
     }
 
-    #section_branding h5 {
-        width: 100%;
+    #section_development article {
+        max-width: 692px;
     }
 
     #dev_1 {
