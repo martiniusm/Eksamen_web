@@ -286,8 +286,9 @@ footer i {
     bottom: 5%;
     right: 5%;
     border-radius: 0.5rem;
+    /*Se kilde 4 i dokument*/
 }
-/*Se kilde 4 i dokument*/
+
 #btn_topp i {
     color: white;
     font-size: xx-large;
@@ -710,8 +711,8 @@ footer i {
     .btn_product a:hover{
         background-color: #252525;
         color: #e6bd43;
+        /*Se kilde 6 i dokument*/
     }
-    /*Se kilde 3 i dokument*/
 
     .products_img {
         width: 100%;
