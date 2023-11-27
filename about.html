@@ -7,6 +7,8 @@
     <meta name="description" content="A more indepth look into what our company do, what we make and design">
 
     <meta property="og:title" content="Here you can take a deeper look into Our Company, read about us, and find out where we are located"> 
+    <meta property="og:url" content="file:///Users/martinius/Documents/GitHub/eksamen_web/about.html">
+    <!--Se antagelse 1 i dokument-->
     <meta property="og:description" content="A more indepth look into what our company do, what we make and design">
     <meta property="og:image" content="img/meta-about-img.png">
     <!--Se kilde 7 i dokument-->
@@ -22,10 +24,10 @@
 
 <body>
     <div id="grid-container">
-        <header>
+        <header tabindex="0">
             <a href="index.html"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden" class="logo" id="logo_btn" aria-label="Logo of our website"></a>
             <!--Logo bildet har funksjon, og er ikke pynt da man kan klikke på den for å komme seg til hovedsiden-->
-            <nav>
+            <nav tabindex="0">
                 <ul class="nav">
                     <li><a href="index.html" aria-label="Homepage"><p>Home</p></a></li>
                     <li><a href="products.html" aria-label="Portfolio page"><p>Portfolio</p></a></li>
@@ -36,7 +38,7 @@
         </header>
 
         <main>
-            <section id="about_header">
+            <section id="about_header" tabindex="0">
                 <article>
                     <h6>Company name</h6>
                     <h4>About our company</h4>
@@ -51,7 +53,7 @@
                     <a href="#contact_us">Get in touch with us</a>
                 </article>
             </section>
-            <section class="our_services">
+            <section class="our_services" tabindex="0">
                 <h2>Our services</h2>
                 <article>
                     <i class="fa-solid fa-people-group"></i>
@@ -82,7 +84,7 @@
                     </p>
                 </article>
             </section>
-            <section id="clients">
+            <section id="clients" tabindex="0">
                 <h2>Some of our clients</h2>
                 <img src="img/logo1.png" alt="Bilde av logo til selskap vi jobber med" class="clients_img">
                 <!--Dette bildet har funksjon da det viser til et annet selskap vi har jobbet med-->
@@ -92,7 +94,7 @@
                 <!--Dette bildet har funksjon da det viser til et annet selskap vi har jobbet med-->
             </section>
             
-            <section id="contact_us">
+            <section id="contact_us" tabindex="0">
                 <h2>Contact us</h2>
                 <article id="contact_us_article1">
                     <h3>Send us a message</h3>
@@ -103,6 +105,7 @@
                     <p>Message</p>
                     <textarea name="message" cols="30" rows="10" id="message" aria-label="Write your message"></textarea>
                     <input type="submit" value="Send message" id="sumbit">
+                    <!--Se kilde 8 i dokument-->
                 </article>
                 <article id="contact_us_article2">
                     <h3 id="contact_info">Contact information</h3>
@@ -134,7 +137,7 @@
             <!--Link til video på youtube hvor jeg fant ut hvordan jeg bygger inn google maps inn i html: https://www.youtube.com/watch?v=4U_AAGHzTok-->
         </main>
 
-        <footer>
+        <footer tabindex="0">
             <a href="index.html"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden" class="logo" aria-label="Click to be taken to the top of the page"></a>
             <!--Logo bildet har funksjon, og er ikke pynt da man kan klikke på den for å komme seg til hovedsiden-->
             <h3>Company copyright 2023</h3>

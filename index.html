@@ -7,6 +7,8 @@
     <meta name="description" content="Our company is the fastest growing company, learn more about us, and read why we are growing fast">
 
     <meta property="og:title" content="Our company is the fastest growing company, learn more about us, and read why we are growing fast"> 
+    <meta property="og:url" content="file:///Users/martinius/Documents/GitHub/eksamen_web/index.html"> 
+    <!--Se antagelse 1 i dokument-->
     <meta property="og:description" content="Here you can learn about our company, what we provide and sign up for newsletter for upcoming events">
     <meta property="og:image" content="img/meta-index-img.png">
     <!--Se kilde 7 i dokument-->
@@ -23,10 +25,10 @@
 
 <body>
     <div id="grid-container">
-        <header>
+        <header tabindex="0">
             <a href="index.html"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden" class="logo" id="logo_btn" aria-label="Logo of our website"></a>
             <!--Logo bildet har funksjon, og er ikke pynt da man kan klikke på den for å komme seg til hovedsiden-->
-            <nav>
+            <nav tabindex="0">
                 <ul class="nav">
                     <li><a href="index.html" aria-label="Homepage"><p class="active_p">Home</p></a></li>
                     <li><a href="products.html" aria-label="Portfolio page"><p>Portfolio</p></a></li>
@@ -37,7 +39,7 @@
         </header>
 
         <main>
-            <section class="bilde_section">
+            <section class="bilde_section" tabindex="0">
                 <div>
                     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="video">
                         <source src="img/mountains.mp4" type="video/mp4">
@@ -63,7 +65,7 @@
                 </div>
             </section>
 
-            <section id="subheading">
+            <section id="subheading" tabindex="0">
                 <h3>Engaging subheading. What can you help your visitors with</h3>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -72,7 +74,7 @@
                 </p>
             </section>
 
-            <section id="about_our_company">
+            <section id="about_our_company" tabindex="0">
                 <img src="https://placehold.co/400x400" alt="Bilde av 400x400 bilde fra placehold" id="img_placeholder_index">
                 <!--Dette bildet har funksjon da det viser til noe selskapet gjør-->
                 <article id="about_our_company_article">
@@ -87,7 +89,7 @@
                 </article>
             </section>
 
-            <section id="our_services" class="our_services">
+            <section id="our_services" class="our_services" tabindex="0">
                 <h2>Our services</h2>
                 <article>
                     <i class="fa-solid fa-people-group"></i>
@@ -119,7 +121,7 @@
                 </article>
             </section>
 
-            <section id="newsletter">
+            <section id="newsletter" tabindex="0">
                 <h2>Sign up for our newsletter</h2>
                 <form action="index.html" method="post">
                     <input type="email" name="email" placeholder="Nora@epost.no" id="email" aria-label="Enter your email">
@@ -128,7 +130,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer tabindex="0">
             <a href="index.html"><img src="img/logo1.png" alt="Bilde av logoen til nettsiden" class="logo" aria-label="Click to be taken to the top of the page"></a>
             <!--Logo bildet har funksjon, og er ikke pynt da man kan klikke på den for å komme seg til hovedsiden-->
             <h3>Company copyright 2023</h3>
